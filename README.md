@@ -3,7 +3,7 @@ Generate fake landscapes using a Generative Adversarial Network
 
 ![Alt Text](https://media.giphy.com/media/f6P4SEJUPdRuKtHE9p/giphy.gif)
 
-The above gif contains images generated during the training of a Generative Adversial Network using landscapes as training data. The training set contained ~3500 images obtained from a [Kaggle](https://www.kaggle.com/arnaud58/landscape-pictures) dataset. Data converted to a numpy file for quicker processing, as image processing took around 10-20 minutes each time. All training was done using Google Cloud computing on two GPUs, which is indicated in GAN.py. After training was finished (~9 hours), I was left with a generator.h5 file that could be used to generate these landscapes.
+The above gif contains images generated during the training of a Generative Adversial Network using landscapes as training data. The training set contained ~3500 images obtained from a [Kaggle](https://www.kaggle.com/arnaud58/landscape-pictures) dataset. Data were converted to a numpy file for quicker processing, as image processing took around 10-20 minutes each time. All training was done using Google Cloud computing on two GPUs, which is indicated in GAN.py. After training was finished (~9 hours), I was left with a generator.h5 file that could be used to generate these landscapes.
 
 While I mainly worked on this project out of interest, I learned a lot about these networks and am pretty happy with how my final results turned out. In the future, I hope to retrain at a higher resolution and for a longer time to see how much improvement is possible.
 
