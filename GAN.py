@@ -16,11 +16,11 @@ os.environ["CUDA_VISIBLE_DEVICES"]="0,1"
 from tensorflow.python.client import device_lib
 device_lib.list_local_devices()
 
-# Save rows x cols samples to image, takes in epoch number for naming purposes
-def save_image(epoch):
+# Save rows x cols samples to image, takes in epoch number for naming purposes and noise
+def save_image(epoch, noise):
 	rows = 5
 	cols = 5
-	margin = 48
+	margin = 16
 	imgShape = 128
 	image_array = np.full(( 
 	  margin + (rows * (imgShape+margin)), 
@@ -194,7 +194,7 @@ def train(epochs, batchSize, learningRate, saveFreq, inputPath, loadNewData, num
 		generator_metric = combined.train_on_batch(noise, valid_y)
 
 		if epoch % saveFreq == 0:
-			save_image(epoch)
+			save_image(epoch, noise)
 			print("Epoch: ", epoch, "Discriminator accuracy: ", 
 				discriminator_metric[1], "Generator Accuracy: ", (generator_metric[1]))
 
