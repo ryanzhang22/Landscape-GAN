@@ -9,6 +9,10 @@ While I mainly worked on this project out of interest, I learned a lot about the
 
 I included code for the network, as well as my sampled results and .npy file in case anyone reading this wanted to test it out for themselves. The loadNewData parameter passed into the main training method should be adjusted according to what the user plans to train on. Plus, GPU training can be adjusted through the os.environ assignment near the top, and by the numGPUs parameter in the main training method.
 
+Another generated sample image:
+
+![](sample.png)
+
 Enjoy!
 
 I referenced code from [here](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/t81_558_class_07_2_Keras_gan.ipynb) and [here](https://skymind.ai/wiki/generative-adversarial-network-gan) to provide a starting point for my own training.
