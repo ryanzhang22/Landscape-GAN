@@ -7,7 +7,7 @@ The above gif contains images generated during the training of a Generative Adve
 
 While I mainly worked on this project out of interest, I learned a lot about these networks and am pretty happy with how my final results turned out. In the future, I hope to retrain at a higher resolution and for a longer time to see how much improvement is possible.
 
-I included code for the network, as well as my sampled results and .npy file in case anyone reading this wanted to test it out for themselves. The loadNewData parameter passed into the main training method should be adjusted according to what the user plans to train on. Plus, GPU training can be adjusted through the os.environ assignment near the top, and by the numGPUs parameter in the main training method.
+I included code for the network, as well as my sampled results and some code to generate using the generate.h5 file in case anyone reading this wanted to test it out for themselves. The loadNewData parameter passed into the main training method should be adjusted according to what the user plans to train on. Plus, GPU training can be adjusted through the os.environ assignment near the top, and by the numGPUs parameter in the main training method. I didn't include the .npy file because it was enormous.
 
 Another generated sample image:
 
